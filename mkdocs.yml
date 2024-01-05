@@ -44,9 +44,9 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
-  - git-committers:
-      repository: JimmyCHWang/puzzle-wiki-cn
-      branch: master
+  # - git-committers:
+  #     repository: JimmyCHWang/puzzle-wiki-cn
+  #     branch: master
 
 extra:
   copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a>'
