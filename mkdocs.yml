@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Puzzle Hunt Wiki CN
 theme:
   name: material
   palette: 
@@ -37,6 +37,12 @@ theme:
     - search.suggest
 
 copyright: Copyright &copy; 2024 JCarlson
+
+nav:
+  - 简介:
+    - index.md
+    - 关于 Puzzle Hunt: intro/about-puzzlehunt.md
+    - 致谢: intro/acknowledgements.md
 
 plugins:
   - privacy
@@ -82,7 +88,11 @@ markdown_extensions:
       line_spans: __span
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.smartsymbols
 
 extra_javascript:
