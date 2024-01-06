@@ -42,6 +42,8 @@ nav:
   - 简介:
     - index.md
     - 关于 Puzzle Hunt: intro/about-puzzlehunt.md
+    - PH 中的谜题: intro/a-puzzle-in-hunt.md
+    - 如何解决一道谜题: intro/how-to-solve-a-puzzle.md
     - 致谢: intro/acknowledgements.md
 
 plugins:
@@ -64,6 +66,7 @@ markdown_extensions:
   - abbr
   - admonition
   - attr_list
+  - def_list
   - footnotes
   - md_in_html
   - toc:
@@ -88,6 +91,8 @@ markdown_extensions:
       line_spans: __span
   - pymdownx.inlinehilite
   - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.superfences:
       custom_fences:
           - name: mermaid
