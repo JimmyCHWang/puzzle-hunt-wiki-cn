@@ -20,7 +20,7 @@ description: 介绍关于 Puzzle Hunt 里的谜题的一般格式
 
 ## 谜题的三个组成部分
 
-在 PH 中出现的谜题往往包含以下三个组成部分：标题、风味文本、正文[^2]。我们以出现在 Miaohunt 2023 预告片[^1]中的这道《大竹林麻将馆》来做一个例子。
+在 PH 中出现的谜题往往包含以下三个组成部分：标题、风味文本、正文[^1]。我们以出现在 Miaohunt 2023 预告片[^2]中的这道《大竹林麻将馆》来做一个例子。
 
 <figure markdown>
   ![大竹林麻将馆](../_static/images/mh2023-pv-dzlmjg.webp){width="600"}
@@ -29,7 +29,7 @@ description: 介绍关于 Puzzle Hunt 里的谜题的一般格式
 
 ### 标题 Title
 
-**标题 (Title)** 是指一道谜题的名字，定义了谜题的主题[^2]。
+**标题 (Title)** 是指一道谜题的名字，定义了谜题的主题[^1]。
 
 本题的标题为《大竹林麻将馆》，由于特殊的视频载体形式，标题即是该视频分段的标题。
 玩家一看便知这道题会与我国的国粹——麻将有关。
@@ -53,7 +53,7 @@ description: 介绍关于 Puzzle Hunt 里的谜题的一般格式
 
 ### 正文 Body
 
-**正文 (Body)** 即是题目主体。不同的谜题之间差距会很大。[^2]
+**正文 (Body)** 即是题目主体。不同的谜题之间差距会很大。[^1]
 
 在这道题中，正文的内容包括图片上的三个部分：
 
@@ -68,6 +68,6 @@ description: 介绍关于 Puzzle Hunt 里的谜题的一般格式
 
 解谜玩家需要根据正文中出现的这些线索，加上标题、风味文本所提供的提示，推导出解谜规则。
 
-[^1]: 【MH2023】《喵镇奇谈》MiaoHunt2023预告片 : [https://www.bilibili.com/video/BV1Bu411M7sU](https://www.bilibili.com/video/BV1Bu411M7sU)
+[^1]: Puzzle Hunt入门就是这么简单！（上）【上海交大推理协会】 : [https://www.bilibili.com/video/BV1ho4y1P7P6](https://www.bilibili.com/video/BV1ho4y1P7P6)
 
-[^2]: Puzzle Hunt入门就是这么简单！（上）【上海交大推理协会】 : [https://www.bilibili.com/video/BV1ho4y1P7P6](https://www.bilibili.com/video/BV1ho4y1P7P6)
+[^2]: 【MH2023】《喵镇奇谈》MiaoHunt2023预告片 : [https://www.bilibili.com/video/BV1Bu411M7sU](https://www.bilibili.com/video/BV1Bu411M7sU)

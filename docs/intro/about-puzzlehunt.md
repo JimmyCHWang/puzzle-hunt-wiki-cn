@@ -39,3 +39,7 @@ graph LR
 最后的一道 Meta Meta 通常被称为**最终元谜题 (Final Meta，简称FM)** 。在这种情况下，解开最终元谜题标志着玩家顺利完成了本次活动。
 
 目前，国内知名度较高的 CCBC、PnKU、MiaoHunt 均采用这种多区域模式。
+
+## 那 Puzzle Hunt 难吗？
+
+难。
