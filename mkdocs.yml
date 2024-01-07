@@ -39,7 +39,7 @@ theme:
 copyright: Copyright &copy; 2024 JCarlson
 
 nav:
-  - 简介:
+  - PuzzleHunt 入门:
     - index.md
     - 关于 Puzzle Hunt: intro/about-puzzlehunt.md
     - PH 中的谜题: intro/a-puzzle-in-hunt.md

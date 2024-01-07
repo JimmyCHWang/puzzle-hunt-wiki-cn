@@ -5,23 +5,23 @@ description: 欢迎来到 Puzzle Hunt Wiki CN
 
 ## 什么是 **Puzzle Hunt Wiki CN** ？
 
-Puzzle Hunt Wiki CN 建立于 2024 年。在**解谜寻宝 (Puzzle Hunt)** 这一活动渐渐在中国年轻群体中流行开来的契机下，
+Puzzle Hunt Wiki CN 建立于 2024 年。在**解谜寻宝 ( Puzzle Hunt )** 这一活动渐渐在中国年轻群体中流行开来的契机下，
 为了方便新的玩家了解这种活动，同时提供一个方便玩家查找与参与活动所需要的知识的场所， Puzzle Hunt Wiki CN 应运而生。
 
-Puzzle Hunt Wiki CN 致力于成为一个免费开放且持续更新的解谜寻宝 (Puzzle Hunt) 知识整合站点。
+Puzzle Hunt Wiki CN 致力于成为一个免费开放且持续更新的解谜寻宝 ( Puzzle Hunt ) 知识整合站点。
 
 ## 什么是谜题？
 
-谜题 (**Puzzle**) 是可以测试人类心智或掌握知识的一类游戏、问题或玩具。广义上说，试卷上的数学题，报纸上的填字游戏，推理小说中的密码等等都属于谜题的范畴。
+谜题 ( **Puzzle** ) 是可以测试人类心智或掌握知识的一类游戏、问题或玩具。广义上说，试卷上的数学题，报纸上的填字游戏，推理小说中的密码等等都属于谜题的范畴。
 
 <figure markdown>
   ![数独题](./_static/images/sudoku.svg){ width="200" }
-  <figcaption>数独 (Sudoku)，一种经典谜题</figcaption>
+  <figcaption>数独，一种经典谜题</figcaption>
 </figure>
 
 ## 什么是解谜？
 
-解谜顾名思义就是指**解决 (Solve) 谜题 (Puzzle)** 。广义上说，根据谜题中已知的信息和线索，通过推理、演绎、搜索等方式获得隐藏信息或答案的过程就叫解谜。由此可见，解谜的范围是非常宽广的，大到战争中破译敌军密码，小到推理聊天记录中的暗号等等，都属于解谜的范畴。
+解谜顾名思义就是指**解决 ( Solve ) 谜题 ( Puzzle )** 。广义上说，根据谜题中已知的信息和线索，通过推理、演绎、搜索等方式获得隐藏信息或答案的过程就叫解谜。由此可见，解谜的范围是非常宽广的，大到战争中破译敌军密码，小到推理聊天记录中的暗号等等，都属于解谜的范畴。
 
 <figure markdown>
   ![数独题答案](./_static/images/sudoku_solved.svg){ width="200" }
