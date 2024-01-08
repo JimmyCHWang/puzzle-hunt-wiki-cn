@@ -38,24 +38,10 @@ theme:
 
 copyright: Copyright &copy; 2024 JCarlson
 
-nav:
-  - PuzzleHunt 入门:
-    - index.md
-    - 关于 Puzzle Hunt: intro/about-puzzlehunt.md
-    - PH 中的谜题: intro/a-puzzle-in-hunt.md
-    - 如何解决一道谜题: intro/how-to-solve-a-puzzle.md
-    - 备战 Puzzle Hunt: intro/be-prepared-for-hunt.md
-    - 致谢: intro/acknowledgements.md
-  - 密码与代码:
-    - ciphers-and-codes/ciphers-codes-index.md
-    - 密码 Ciphers: 
-      - ciphers-and-codes/ciphers/ciphers-index.md
-    - 代码 Codes:
-      - ciphers-and-codes/codes/codes-index.md
-
 plugins:
   - privacy
   - search
+  - tags
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
@@ -68,6 +54,8 @@ extra:
   pagetime: 'on'
   manifest: '_static/manifest.webmanifest'
   githash: ''
+  status:
+    frequent: 本页被标注为常用
 
 markdown_extensions:
   - abbr
@@ -107,7 +95,26 @@ markdown_extensions:
             format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.smartsymbols
 
+extra_css:
+  - _static/css/extra.css
+
 extra_javascript:
   - _static/js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - PuzzleHunt 入门:
+    - index.md
+    - 关于 Puzzle Hunt: intro/about-puzzlehunt.md
+    - PH 中的谜题: intro/a-puzzle-in-hunt.md
+    - 如何解决一道谜题: intro/how-to-solve-a-puzzle.md
+    - 备战 Puzzle Hunt: intro/be-prepared-for-hunt.md
+    - 致谢: intro/acknowledgements.md
+  - 密码与代码:
+    - ciphers-and-codes/index.md
+    - 密码 Ciphers: 
+      - ciphers-and-codes/ciphers/index.md
+      - A1Z26: ciphers-and-codes/ciphers/a1z26.md
+    - 代码 Codes:
+      - ciphers-and-codes/codes/index.md
