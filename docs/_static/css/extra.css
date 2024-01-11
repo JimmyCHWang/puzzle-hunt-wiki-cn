@@ -5,6 +5,7 @@
 .md-status--frequent::after {
     mask-image: var(--md-status--frequent);
     -webkit-mask-image: var(--md-status--frequent);
+    vertical-align: sub;
 }
 
 .md-typeset tr.table-horizontal th {

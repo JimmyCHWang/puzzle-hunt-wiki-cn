@@ -115,6 +115,9 @@ nav:
     - ciphers-and-codes/index.md
     - 密码 Ciphers: 
       - ciphers-and-codes/ciphers/index.md
-      - A1Z26: ciphers-and-codes/ciphers/a1z26.md
+      - A1Z26 字母序号: ciphers-and-codes/ciphers/a1z26.md
+      - Base 进制转换: ciphers-and-codes/ciphers/base.md
     - 代码 Codes:
       - ciphers-and-codes/codes/index.md
+      - ASCII: ciphers-and-codes/codes/ascii.md
+      - Color Codes 颜色代码: ciphers-and-codes/codes/color-codes.md
