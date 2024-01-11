@@ -6,3 +6,14 @@
     mask-image: var(--md-status--frequent);
     -webkit-mask-image: var(--md-status--frequent);
 }
+
+.md-typeset tr.table-horizontal th {
+    min-width: 2rem !important;
+    border-top: 0.05rem solid var(--md-typeset-table-color);
+    text-align: center;
+}
+
+.md-typeset tr.table-horizontal td {
+    border-left: 0.05rem solid var(--md-typeset-table-color);
+    text-align: center !important;
+}
