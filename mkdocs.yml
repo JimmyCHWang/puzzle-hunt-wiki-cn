@@ -119,6 +119,8 @@ nav:
       - Atbash 埃特巴什: ciphers-and-codes/ciphers/atbash.md
       - Base 进制转换: ciphers-and-codes/ciphers/base.md
       - Caesar 凯撒: ciphers-and-codes/ciphers/caesar.md
+      - Keyboard 键盘: ciphers-and-codes/ciphers/keyboard.md
+      - MonoAlphabetic 单表替换: ciphers-and-codes/ciphers/monoalphabetic.md
     - 代码 Codes:
       - ciphers-and-codes/codes/index.md
       - ASCII: ciphers-and-codes/codes/ascii.md

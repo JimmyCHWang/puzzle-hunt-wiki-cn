@@ -7,7 +7,7 @@ description: Atbash 密码
 
 ## 转换方式
 
-Atbash 密码属于经典的替换密码。替换的表格为将字母表倒过来排， A 替换成 Z ， B 替换成 Y ，以此类推。
+Atbash 密码属于经典的替换密码。替换方法为将明文的每一个字母按照倒过来的字母表进行替换， A 替换成 Z ， B 替换成 Y ，以此类推。
 
 <table>
     <tr class="table-horizontal">
