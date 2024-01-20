@@ -7,7 +7,7 @@ description: 记录了虽然想到要加但是还没来得及写页面的Cipher�
 - Atbash
 - Binary / Baconian
 - Caesar / ROT13
-- Enigma
+- Keyboard
 - Pigpen
 - Playfair
 - Polybius / ADFGVX / Bifid / Nihilist / Tapcode

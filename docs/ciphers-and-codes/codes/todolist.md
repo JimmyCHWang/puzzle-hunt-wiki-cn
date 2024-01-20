@@ -15,7 +15,6 @@ description: 记录了虽然想到要加但是还没来得及写页面的Code。
 - DNA / RNA / Amino Acids
 - Gray Code
 - ISBN
-- Keyboard (QUERTY) / DVORAK / Phone
 - Leetspeak
 - Maritime Signal Flags
 - Morse
