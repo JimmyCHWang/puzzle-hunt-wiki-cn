@@ -18,3 +18,13 @@
     border-left: 0.05rem solid var(--md-typeset-table-color);
     text-align: center !important;
 }
+
+.md-typeset thead tr.table-vertical td {
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+.md-typeset tr.table-vertical td {
+    border-left: 0.05rem solid var(--md-typeset-table-color);
+    text-align: center !important;
+}
