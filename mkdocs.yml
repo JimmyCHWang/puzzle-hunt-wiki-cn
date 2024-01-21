@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Puzzle Hunt Wiki CN
 theme:
   name: material
   palette: 
@@ -41,6 +41,7 @@ copyright: Copyright &copy; 2024 JCarlson
 plugins:
   - privacy
   - search
+  - tags
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
@@ -53,11 +54,14 @@ extra:
   pagetime: 'on'
   manifest: '_static/manifest.webmanifest'
   githash: ''
+  status:
+    frequent: 本页被标注为常用
 
 markdown_extensions:
   - abbr
   - admonition
   - attr_list
+  - def_list
   - footnotes
   - md_in_html
   - toc:
@@ -82,10 +86,51 @@ markdown_extensions:
       line_spans: __span
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.smartsymbols
+
+extra_css:
+  - _static/css/extra.css
 
 extra_javascript:
   - _static/js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - PuzzleHunt 入门:
+    - index.md
+    - 关于 Puzzle Hunt: intro/about-puzzlehunt.md
+    - PH 中的谜题: intro/a-puzzle-in-hunt.md
+    - 如何解决一道谜题: intro/how-to-solve-a-puzzle.md
+    - 备战 Puzzle Hunt: intro/be-prepared-for-hunt.md
+    - 致谢: intro/acknowledgements.md
+  - 密码与代码:
+    - ciphers-and-codes/index.md
+    - 密码 Ciphers: 
+      - ciphers-and-codes/ciphers/index.md
+      - A1Z26 字母序号: ciphers-and-codes/ciphers/a1z26.md
+      - Atbash 埃特巴什: ciphers-and-codes/ciphers/atbash.md
+      - Baconian 培根: ciphers-and-codes/ciphers/baconian.md
+      - Base 进制转换: ciphers-and-codes/ciphers/base.md
+      - Caesar 凯撒: ciphers-and-codes/ciphers/caesar.md
+      - Columnar 列位移: ciphers-and-codes/ciphers/columnar.md
+      - Keyboard 键盘: ciphers-and-codes/ciphers/keyboard.md
+      - MonoAlphabetic 单表替换: ciphers-and-codes/ciphers/monoalphabetic.md
+      - Pigpen 猪圈: ciphers-and-codes/ciphers/pigpen.md
+      - Playfair 普莱费尔: ciphers-and-codes/ciphers/playfair.md
+      - Polybius 棋盘: ciphers-and-codes/ciphers/polybius.md
+      - Railfence 栅栏: ciphers-and-codes/ciphers/railfence.md
+      - Reverse 倒序: ciphers-and-codes/ciphers/reverse.md
+      - Scytale 密码棒: ciphers-and-codes/ciphers/scytale.md
+      - Vigenere 维吉尼亚: ciphers-and-codes/ciphers/vigenere.md
+    - 代码 Codes:
+      - ciphers-and-codes/codes/index.md
+      - ASCII: ciphers-and-codes/codes/ascii.md
+      - Color Codes 颜色代码: ciphers-and-codes/codes/color-codes.md

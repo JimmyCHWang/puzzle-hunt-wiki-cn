@@ -1,0 +1,30 @@
+:root {
+    --md-status--frequent: url('data:image/svg+xml;charset=utf-8,<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z"/></svg>')
+}
+
+.md-status--frequent::after {
+    mask-image: var(--md-status--frequent);
+    -webkit-mask-image: var(--md-status--frequent);
+    vertical-align: sub;
+}
+
+.md-typeset tr.table-horizontal th {
+    min-width: 2rem !important;
+    border-top: 0.05rem solid var(--md-typeset-table-color);
+    text-align: center;
+}
+
+.md-typeset tr.table-horizontal td {
+    border-left: 0.05rem solid var(--md-typeset-table-color);
+    text-align: center !important;
+}
+
+.md-typeset thead tr.table-vertical td {
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+.md-typeset tr.table-vertical td {
+    border-left: 0.05rem solid var(--md-typeset-table-color);
+    text-align: center !important;
+}
