@@ -21,12 +21,11 @@ description: 键盘密码
 
 ### QWERTY
 
-最常见的键盘布局即是 QWERTY 布局 (QWERTY Layout) [^1]，取自该布局字母区最左上角的六个字符。
+最常见的键盘布局即是 QWERTY 布局 (QWERTY Layout) ，取自该布局字母区最左上角的六个字符。
 
 <figure markdown>
   ![QWERTY键盘](../../_static/images/keyboard_layout.svg){ width="600" }
-  <figcaption>QWERTY键盘&nbsp;
-    <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>
+  <figcaption markdown>QWERTY键盘&nbsp;[^1]
   </figcaption>
 </figure>
 
