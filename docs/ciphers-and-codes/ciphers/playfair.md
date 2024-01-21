@@ -31,10 +31,22 @@ S V W X Y
 
 之后进行加密，对于每两个字母，按照如下流程将其转换成另外两个字母：
 
-1. 在每组中，找出两个字母在矩阵中的地方。
-2. 若两个字母不同行也不同列，在矩阵中找出另外两个字母（第一个字母对应行优先），使这四个字母成为一个长方形的四个角。
+1. 找出两个字母在方阵中的位置。
+2. 若两个字母不同行也不同列，在方阵中找出另外两个字母（第一个字母对应行优先），使这四个字母成为一个长方形的四个角。
+    <figure markdown>
+        ![普莱费尔对角情况](../../_static/images/playfair-case1.webp){width="200"}
+        <figcaption markdown>加密 `WE` 可以得到 `ZY` </figcaption>
+    </figure>
 3. 若两个字母同行，取这两个字母右方的字母（若字母在最右方则取最左方的字母）。
+    <figure markdown>
+        ![普莱费尔同行情况](../../_static/images/playfair-case2.webp){width="200"}
+        <figcaption markdown>加密 `HA` 可以得到 `NB` </figcaption>
+    </figure>
 4. 若两个字母同列，取这两个字母下方的字母（若字母在最下方则取最上方的字母）。
+    <figure markdown>
+        ![普莱费尔同列情况](../../_static/images/playfair-case3.webp){width="200"}
+        <figcaption markdown>加密 `TO` 可以得到 `FW` </figcaption>
+    </figure>
 
 新找到的两个字母就是原本的两个字母加密的结果。
 
