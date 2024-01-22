@@ -5,7 +5,7 @@ description: 记录了虽然想到要加但是还没来得及写页面的Code。
 
 - Airport / Airline Codes
 - Alphabets (Greek / Futhorc / Hieroglyphics)
-- Area codes (Phone number codes / CN ID codes)
+- Area codes (Phone number codes / CN ID codes / Zipcode )
 - ASCII
 - Bar code / QR code
 - Book code
@@ -24,4 +24,3 @@ description: 记录了虽然想到要加但是还没来得及写页面的Code。
 - Resistor Color Code
 - Semaphore
 - Unicode
-- Zip Code
