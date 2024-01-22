@@ -132,5 +132,21 @@ nav:
       - Vigenere 维吉尼亚: ciphers-and-codes/ciphers/vigenere.md
     - 代码 Codes:
       - ciphers-and-codes/codes/index.md
+      - Airport / Airlines 机场与航司: ciphers-and-codes/codes/airport.md
+      - Alphabet 字母表: ciphers-and-codes/codes/alphabet.md
+      - Area Codes 地区代码: ciphers-and-codes/codes/area-codes.md
       - ASCII: ciphers-and-codes/codes/ascii.md
+      - Barcode / QR Code: ciphers-and-codes/codes/barcode-qrcode.md
+      - Braille 布莱叶盲文: ciphers-and-codes/codes/braille.md
+      - Chinese Encoding 中文相关代码: ciphers-and-codes/codes/chinese-encoding.md
       - Color Codes 颜色代码: ciphers-and-codes/codes/color-codes.md
+      - Country Codes 国家代码: ciphers-and-codes/codes/country-codes.md
+      - DNA: ciphers-and-codes/codes/dna.md
+      - Maritime Flags 海事信号旗: ciphers-and-codes/codes/maritime-signal-flags.md
+      - Morse 摩斯电码: ciphers-and-codes/codes/morse.md
+      - Phonespell 手机键盘拼写: ciphers-and-codes/codes/phonespell.md
+      - Phonetic Alphabet 音标字母: ciphers-and-codes/codes/phonetic-alphabet.md
+      - Playing Cards 扑克牌: ciphers-and-codes/codes/playing-cards.md
+      - Resistor Color 电阻颜色: ciphers-and-codes/codes/resistor-color.md
+      - Semaphore 旗语: ciphers-and-codes/codes/semaphore.md
+      - Unicode 万国码: ciphers-and-codes/codes/unicode.md
