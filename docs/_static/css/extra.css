@@ -8,6 +8,14 @@
     vertical-align: sub;
 }
 
+.md-typeset table img {
+    max-width: none;
+}
+
+.md-typeset table td.no-padding {
+    padding: 0 !important;
+}
+
 .md-typeset tr.narrow th, .md-typeset tr.narrow td {
     padding: 0.25rem 0.5rem !important;
 }
@@ -16,6 +24,7 @@
     min-width: 2rem !important;
     border-top: 0.05rem solid var(--md-typeset-table-color);
     text-align: center;
+    vertical-align: middle;
 }
 .md-typeset tr.table-horizontal th.wide {
     min-width: 5rem !important;
@@ -24,14 +33,15 @@
 .md-typeset tr.table-horizontal td {
     border-left: 0.05rem solid var(--md-typeset-table-color);
     text-align: center !important;
+    vertical-align: middle;
 }
 
 .md-typeset thead tr.table-vertical td {
     font-weight: bold;
-    background-color: #bbb;
 }
 
 .md-typeset tr.table-vertical td {
     border-left: 0.05rem solid var(--md-typeset-table-color);
     text-align: center !important;
+    vertical-align: middle;
 }

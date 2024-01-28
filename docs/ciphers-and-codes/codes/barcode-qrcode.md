@@ -12,7 +12,7 @@ description: 条形码与二维码
 条形码有很多种类，其中常用的一种为 Code-128 。下图是使用 Code-128 方法生成的一张条形码。
 
 <figure markdown>
-  ![条形码](../../_static/images/barcode-puzzle-hunt-wiki-cn.svg){ width="200" }
+  ![条形码](../../_static/images/barcode-puzzle-hunt-wiki-cn.gif){ width="200" }
   <figcaption markdown>条形码
   </figcaption>
 </figure>
@@ -24,7 +24,7 @@ description: 条形码与二维码
 最有名的二维码莫过于 QR 码，其特征是三个角落的“回”字图案，又称定位标志。下图是一张 QR 码的示例。
 
 <figure markdown>
-  ![二维码](../../_static/images/qrcode-phwikicn.svg){ width="250" }
+  ![二维码](../../_static/images/qrcode-phwikicn.gif){ width="150" }
   <figcaption markdown>QR 码
   </figcaption>
 </figure>
@@ -37,4 +37,4 @@ description: 条形码与二维码
 
 条形码与二维码的生成网站： [barcode.tec-it.com](https://barcode.tec-it.com/zh)
 
-条形码与二维码的在线扫描： [zxing.org/w/decode.jspx](zxing.org/w/decode.jspx)
+条形码与二维码的在线扫描： [zxing.org/w/decode.jspx](https://zxing.org/w/decode.jspx)
