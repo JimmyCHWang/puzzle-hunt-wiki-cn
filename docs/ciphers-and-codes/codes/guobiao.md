@@ -13,7 +13,4 @@ description: 身份证地区代码、手机前缀（中国）、固话区号、�
 
 ## 查询国标文件
 
-你可以在[国家标准馆网站](https://www.nssi.org.cn/nssi/front/index.jsp)查询到国标文件。
-
-除此以外，其他类型的标准，比如行业标准、地方标准、国际或国外标准，可以在[中国标准服务网](https://www.cssn.net.cn/cssn/index)查询。
-
+你可以在[国家标准全文公开系统](https://openstd.samr.gov.cn/)查询到国标文件。
