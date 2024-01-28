@@ -106,6 +106,7 @@ ICAO 是另一个航空器组织，叫做国际民航组织，它们也给每一
 ### 辅助参考资料
 
 - YouTube CGP Grey : [✈️ The Maddening Mess of Airport Codes! ✈️](https://youtu.be/jfOUVYQnuhw)
+  - 中文非官方翻译 : [BV1z24y1T7G3](https://www.bilibili.com/video/BV1z24y1T7G3)
 - Bilibili 昕有凌兮杂货铺 : [BV1cw411c7mW](https://www.bilibili.com/video/BV1cw411c7mW)
 
 ## 航空公司代码

@@ -39,6 +39,6 @@ ASCII 表的全表比较大，请参考下方附录。
 ## 附录：ASCII 表
 
 <figure markdown>
-  ![ASCII表](../../_static/images/ascii_table.svg){ width="500" }
+  ![ASCII表](../../_static/images/ascii-table.svg){ width="500" }
   <figcaption markdown>ASCII 表</figcaption>
 </figure>
