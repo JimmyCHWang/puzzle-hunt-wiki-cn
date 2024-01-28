@@ -46,7 +46,7 @@ graph LR
 
 若要查询接下来要举办的国内外 Puzzle Hunt ，您可以前往以下解谜寻宝日历查询：
 
-- 由 喵喵喵解谜 团队维护的日历： [https://puzzlehunt.cn/](https://puzzlehunt.cn/)
+- 由 喵喵喵解谜 团队维护的日历： [https://calendar.puzzlehunt.cn/](https://calendar.puzzlehunt.cn/)
 - 由 北京大学推理协会 团队维护的日历： [https://info.pkupuzzle.art/calendar.html](https://info.pkupuzzle.art/calendar.html)
 
 目前国内比较知名的大型 Puzzle Hunt 均采取组队参加的方式，人数上限为 4 至 6 人左右。
