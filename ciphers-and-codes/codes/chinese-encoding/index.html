@@ -1,0 +1,2036 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="汉语拼音、五笔、四角号码、仓颉、中文电码">
+      
+      
+      
+      
+        <link rel="prev" href="../braille/">
+      
+      
+        <link rel="next" href="../color-codes/">
+      
+      
+      <link rel="icon" href="../../../_static/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Chinese Encoding 中文相关代码 - Puzzle Hunt Wiki CN</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../../../assets/external/fonts.googleapis.com/css.eacb2e61.css">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Source Code Pro"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../_static/css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Puzzle Hunt Wiki CN" class="md-header__button md-logo" aria-label="Puzzle Hunt Wiki CN" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Puzzle Hunt Wiki CN
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chinese Encoding 中文相关代码
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换至深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换至浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+    
+  
+  PuzzleHunt 入门
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  密码与代码
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Puzzle Hunt Wiki CN" class="md-nav__button md-logo" aria-label="Puzzle Hunt Wiki CN" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg>
+
+    </a>
+    Puzzle Hunt Wiki CN
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    PuzzleHunt 入门
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            PuzzleHunt 入门
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../intro/about-puzzlehunt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    关于 Puzzle Hunt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../intro/a-puzzle-in-hunt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PH 中的谜题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../intro/how-to-solve-a-puzzle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    如何解决一道谜题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../intro/be-prepared-for-hunt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    备战 Puzzle Hunt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../intro/acknowledgements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    致谢
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    密码与代码
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            密码与代码
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../ciphers/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    密码 Ciphers
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    代码 Codes
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            代码 Codes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../airport/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Airport / Airlines 机场与航司
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alphabet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alphabet 字母表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../area-codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Area Codes 地区代码
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ascii/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ASCII
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--frequent" title="本页被标注为常用">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../barcode-qrcode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Barcode / QR Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../braille/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Braille 布莱叶盲文
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--frequent" title="本页被标注为常用">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Chinese Encoding 中文相关代码
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Chinese Encoding 中文相关代码
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      拼音
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拼音">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      声母表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      韵母表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      拼音：扩展阅读
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他中文读音表示法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="其他中文读音表示法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      注音符号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      威妥玛拼音
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      拼音、注音、威妥玛转换工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      方言拼音
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      反切
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      五笔
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五笔">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      五笔工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      仓颉
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="仓颉">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      仓颉工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      四角号码
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四角号码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      四角号码工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      中文电码
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="中文电码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      中文电码工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      通用规范汉字表
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../color-codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Color Codes 颜色代码
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--frequent" title="本页被标注为常用">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../country-codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Country Codes 国家代码
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dna/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DNA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guobiao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guo Biao 国家标准
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maritime-signal-flags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maritime Flags 海事信号旗
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../morse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Morse 摩斯电码
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phonespell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phonespell 手机键盘拼写
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phonetic-alphabet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phonetic Alphabet 音标字母
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../playing-cards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Playing Cards 扑克牌
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resistor-color/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resistor Color 电阻颜色
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semaphore/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semaphore 旗语
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unicode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unicode 万国码
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      拼音
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拼音">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      声母表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      韵母表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      拼音：扩展阅读
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他中文读音表示法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="其他中文读音表示法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      注音符号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      威妥玛拼音
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      拼音、注音、威妥玛转换工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      方言拼音
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      反切
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      五笔
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五笔">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      五笔工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      仓颉
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="仓颉">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      仓颉工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      四角号码
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四角号码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      四角号码工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      中文电码
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="中文电码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      中文电码工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      通用规范汉字表
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Chinese Encoding 中文相关代码</h1>
+
+<p>在中文 PH 里与中文相关的代码自然是特色。</p>
+<h2 id="_1">拼音<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>汉语拼音是用拉丁字母来表示普通话读音的方法，规范来自<a href="http://www.moe.gov.cn/ewebeditor/uploadfile/2015/03/02/20150302165814246.pdf">《汉语拼音方案》</a>。你可以从新华字典的附录中找到这份方案的内容。</p>
+<h3 id="_2">声母表<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<table class="chinese-encoding-table wikitable">
+<tbody>
+<tr>
+<td width="50px">字母</td>
+<td width="50px"><b>b</b></td>
+<td width="50px"><b>p</b></td>
+<td width="50px"><b>m</b></td>
+<td width="50px"><b>f</b></td>
+<td width="50px"><b>d</b></td>
+<td width="50px"><b>t</b></td>
+<td width="50px"><b>n</b></td>
+<td width="50px"><b>l</b></td></tr>
+<tr>
+<td>发音</td>
+<td><b>ㄅ</b> 玻</td>
+<td><b>ㄆ</b> 坡</td>
+<td><b>ㄇ</b> 摸</td>
+<td><b>ㄈ</b> 佛</td>
+<td><b>ㄉ</b> 得</td>
+<td><b>ㄊ</b> 特</td>
+<td><b>ㄋ</b> 讷</td>
+<td><b>ㄌ</b> 勒</td></tr>
+<tr>
+<td width="50px">字母</td>
+<td width="50px"><b>g</b></td>
+<td width="50px"><b>k</b></td>
+<td width="50px"><b>h</b></td>
+<td width="50px"></td>
+<td width="50px"><b>j</b></td>
+<td width="50px"><b>q</b></td>
+<td width="50px"><b>x</b></td>
+<td width="50px"></td></tr>
+<tr>
+<td>发音</td>
+<td><b>ㄍ</b> 哥</td>
+<td><b>ㄎ</b> 科</td>
+<td><b>ㄏ</b> 喝</td>
+<td></td>
+<td><b>ㄐ</b> 基</td>
+<td><b>ㄑ</b> 欺</td>
+<td><b>ㄒ</b> 希</td>
+<td></td></tr>
+<tr>
+<td width="50px">字母</td>
+<td width="50px"><b>zh</b></td>
+<td width="50px"><b>ch</b></td>
+<td width="50px"><b>sh</b></td>
+<td width="50px"><b>r</b></td>
+<td width="50px"><b>z</b></td>
+<td width="50px"><b>c</b></td>
+<td width="50px"><b>s</b></td></tr>
+<tr>
+<td>发音</td>
+<td><b>ㄓ</b> 知</td>
+<td><b>ㄔ</b> 蚩</td>
+<td><b>ㄕ</b> 诗</td>
+<td><b>ㄖ</b> 日</td>
+<td><b>ㄗ</b> 资</td>
+<td><b>ㄘ</b> 雌</td>
+<td><b>ㄙ</b> 思</td></tr>
+</tbody></table>
+
+<h3 id="_3">韵母表<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<table class="chinese-encoding-table wikitable">
+<tbody><tr>
+<th>
+</th>
+<th>开口呼</th>
+<th>齐齿呼</th>
+<th>合口呼</th>
+<th>撮口呼</th></tr>
+<tr>
+<th rowspan="6" style="background-color: #e6e6fa;">单<br>元<br>音<br>韵<br>母</th>
+<td width="23%">空韵<br>ㄭ 师</td>
+<td width="23%">i / yi<br>丨 衣</td>
+<td width="23%">u / wu<br>ㄨ 乌</td>
+<td width="23%">ü / yu<br>ㄩ 迂</td></tr>
+<tr>
+<td>a<br>ㄚ 啊</td>
+<td>ia / ya<br>丨ㄚ 呀</td>
+<td>ua / wa<br>ㄨㄚ 蛙</td>
+<td style="background-color: #ccc;"></td></tr>
+<tr>
+<td>o<br>ㄛ 喔</td>
+<td style="background-color: #ccc;">
+</td>
+<td>uo / wo<br>ㄨㄛ 窝</td>
+<td style="background-color: #ccc;">
+</td></tr>
+<tr>
+<td>e<br>ㄜ 鹅</td>
+<td style="background-color: #ccc;"></td>
+<td style="background-color: #ccc;"></td>
+<td style="background-color: #ccc;"></td></tr>
+<tr>
+<td>ê<br>ㄝ 诶</td>
+<td>ie / ye<br>丨ㄝ 耶</td>
+<td style="background-color: #ccc;"></td>
+<td>üe / yue<br>ㄩㄝ 约</td></tr>
+<tr>
+<td>er<br>ㄦ 儿</td>
+<td style="background-color: #ccc;"></td>
+<td style="background-color: #ccc;"></td>
+<td style="background-color: #ccc;"></td></tr>
+<tr>
+<th rowspan="4" style="background-color: #e6e6fa;">复<br>元<br>音<br>韵<br>母</th>
+<td>ai<br>ㄞ 哀</td>
+<td style="background-color: #ccc;"></td>
+<td>uai / wai<br>ㄨㄞ 歪</td>
+<td style="background-color: #ccc;"></td></tr>
+<tr>
+<td>ei<br>ㄟ 诶</td>
+<td style="background-color: #ccc;"></td>
+<td>uei(ui) / wei<br>ㄨㄟ 威</td>
+<td style="background-color: #ccc;"></td></tr>
+<tr>
+<td>ao<br>ㄠ 熬</td>
+<td>iao / yao<br>丨ㄠ 腰</td>
+<td style="background-color: #ccc;"></td>
+<td style="background-color: #ccc;"></td></tr>
+<tr>
+<td>ou<br>ㄡ 欧</td>
+<td>iou(iu) / you<br>丨ㄡ 优</td>
+<td style="background-color: #ccc;"></td>
+<td style="background-color: #ccc;"></td></tr>
+<tr>
+<th rowspan="6" style="background-color: #e6e6fa;">带<br>鼻<br>音<br>韵<br>母</th>
+<td>an<br>ㄢ 安</td>
+<td>ian / yan<br>丨ㄢ 烟</td>
+<td>uan / wan<br>ㄨㄢ 弯</td>
+<td>üan / yuan<br>ㄩㄢ 冤</td></tr>
+<tr>
+<td>en<br>ㄣ 恩</td>
+<td style="background-color: #ccc;"></td>
+<td>uen(un) / wen<br>ㄨㄣ 温</td>
+<td style="background-color: #ccc;"></td></tr>
+<tr>
+<td style="background-color: #ccc;"></td>
+<td>in / yin<br>丨ㄣ 因</td>
+<td style="background-color: #ccc;"></td>
+<td>ün / yun<br>ㄩㄣ 晕</td></tr>
+<tr>
+<td>ang<br>ㄤ 昂</td>
+<td>iang / yang<br>丨ㄤ 央</td>
+<td>uang / wang<br>ㄨㄤ 汪</td>
+<td style="background-color: #ccc;"></td></tr>
+<tr>
+<td>eng<br>ㄥ 亨的韵母</td>
+<td>ing / ying<br>丨ㄥ 英</td>
+<td>ueng / weng<br>ㄨㄥ 翁</td>
+<td style="background-color: #ccc;"></td></tr>
+<tr>
+<td>ong<br>ㄨㄥ 轰的韵母</td>
+<td>iong / yong<br>ㄩㄥ 雍</td>
+<td style="background-color: #ccc;"></td>
+<td style="background-color: #ccc;"></td></tr>
+</tbody></table>
+
+<style>
+.chinese-encoding-table {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato,
+        'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 80%;
+    tbody tr th {
+        vertical-align: middle;
+    }
+}
+</style>
+
+<h3 id="_4">拼音：扩展阅读<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Bilibili Siphercase : <a href="https://www.bilibili.com/video/BV1xY4y137Ew">重新认识「汉语拼音」</a></li>
+</ul>
+<h2 id="_5">其他中文读音表示法<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>汉语拼音是目前中国大陆主要使用的拉丁化读音表示法。在我国部分地区，还会用到比较特殊的读音表示。</p>
+<h3 id="_6">注音符号<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>注音符号 (Bopomofo) 诞生于民国时期，目前是我国台湾地区广为流行的读音表示方案。你可以在本章上方的拼音声母、韵母表里找到与汉语拼音对应的注音符号。</p>
+<h4 id="_7">注音符号第二式<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p>注音符号第二式，又称国音二式，是台湾在 1980 年代公布的基于注音符号的读音罗马字方案，与汉语拼音类似使用英文字母来表示。</p>
+<h3 id="_8">威妥玛拼音<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>威妥玛拼音 (Wade-Giles) 又称韦氏拼音、威翟式拼音，是第一套将汉语拉丁化的方案，在清朝时期便已有之。
+威妥玛拼音的特点是使用了非常多的符号，比如用撇号 ' 来表示送气，韵母 ê 等。
+比如北京 Pei-ching ，天津 T'ien-chin 等。</p>
+<p>威妥玛拼音使用数字 1、2、3、4 标注声调。</p>
+<h4 id="_9">邮政式拼音<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<p>邮政式拼音是为了迎合二十世纪初期打电报的需要，在威妥玛拼音的基础上，去掉了附加符号的一种拼写法。
+就算是现在国内也有很多地方能够看到邮政式拼音留下的遗产，
+比如清华大学中清华的拼写 Tsinghua ，北京大学中北京的拼写 Peking ，青岛啤酒中青岛的拼写 Tsingtao 等。</p>
+<h3 id="_10">拼音、注音、威妥玛转换工具<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://ctext.org/pinyin.pl?if=gb&amp;remap=gb">中国哲学书电子化计划：注音转换工具</a></li>
+</ul>
+<h3 id="_11">方言拼音<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>比较著名的方言拼音包括粤语拼音、吴语拼音等。</p>
+<h4 id="_12">粤拼<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<p>香港语言学学会粤语拼音方案，简称粤拼，是现在主流的粤语拼音方案。
+粤拼的拼音字母是由拉丁字母 a 至 z 组成，其中 q、r、v、x 不用。
+粤拼共有 19 个声母和 58 个韵母。字调则以阿拉伯数字 1 至 6 标示。</p>
+<p>关于粤拼方案，可以查看这里：<a href="https://jyutping.org/zh-cmn-hant/jyutping/">香港語言學學會粵語拼音方案</a></p>
+<h3 id="_13">反切<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p class="annotate">反切是用两个汉字给一个汉字注音的方法。两汉字中前一个字取其声母，后一个字取其韵母和声调，拼合出被注音字的读音。(1)</p>
+<ol>
+<li>古代的汉文是竖着写的，因而两个汉字的前一个字通常称为<strong>上字</strong>，而后一个字被称为<strong>下字</strong>。</li>
+</ol>
+<p>举例：</p>
+<ul>
+<li>苏：素姑切。素取声母，姑取韵母和声调。</li>
+<li>杭：胡郎切。胡取声母，郎取韵母和声调。</li>
+</ul>
+<p>需要注意的是，古字典的反切只适用于当时的古音。汉语发展到现在，读音经过了诸多改变，以前制定的反切如今已无法简单套用。</p>
+<p>查询古音的网站：<a href="https://zi.tools/">字统网</a></p>
+<h2 id="_14">五笔<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<p>五笔又称为<strong>王码</strong>，创作人是王永民，创作于 1983 年。
+五笔是作为拼音之外的另一种广为使用的输入法，其特色是能够在不知道汉字读音的情况下也能打出来字，完全依据笔画和字形特征对汉字进行编码。</p>
+<p>五笔的核心思想在于<strong>拆字</strong>，将汉字拆成<u>组成汉字</u>的<strong>字根</strong>，然后按笔画顺序依次输入。举例：</p>
+<ul>
+<li>解：拆分成「⺈」(q)、「用」(e)、「刀」(v)、「⿱𠂉一」、「丨」(h)，一共五个部件，取前三个和最后一个编码，为 qevh 。</li>
+<li>谜：拆分成「讠」(y)、「米」(o)、「辶」(p)，取三个，加末位识别码「左右末笔为捺」(y)，为 yopy 。</li>
+</ul>
+<figure>
+<p><img alt="五笔字根表" src="../../../_static/images/wubi86_layout.webp" width="400" />
+  </p>
+<figcaption>
+<p>五笔字根表<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>
+  </p>
+</figcaption>
+</figure>
+<p>以上为 86 版本的五笔字根。在这之后还有「98版」和「新世纪版」两个版本，对少许字根做出了更改，本 Wiki 不进行细述。</p>
+<p>五笔输入法解决了过去拼音输入法的一大弊端，即重码数量较多，打一个字的字音可能要翻好几页才能翻到你要的那个字。
+五笔输入法的重码率非常低，打字速度很快，因此一度广为传播。
+但现如今由于拼音输入法越来越智能，加之五笔输入法的学习门槛较高（需要背会每一个按键对应的字根），年轻一代的中国人更常使用拼音输入法。</p>
+<h3 id="_15">五笔工具<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>由五笔输入汉字：</p>
+<ul>
+<li><a href="https://zaixianwubishuru.bmcx.com/">便民查询网：在线五笔输入法</a></li>
+<li><a href="http://www.daziba.cn/tools/onlinewbime.aspx">在线打字吧</a></li>
+</ul>
+<p>由汉字反查五笔：</p>
+<ul>
+<li><a href="https://www.fanwenzhan.com/wubi/">范文站</a></li>
+<li><a href="https://www.iamwawa.cn/wubi.html">蛙蛙工具</a></li>
+</ul>
+<h2 id="_16">仓颉<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<p>仓颉输入法的主要受众在广东、香港、台湾等地，在繁体中文的输入法中有着重要的地位。
+类似五笔的拆字思想，仓颉输入法也有字根，但字根数为24个，包含「哲理类」、「笔画类」、「人体类」、「字形类」四种类别，以及两个特殊键位 X 和 Z。</p>
+<figure>
+<p><img alt="仓颉键盘" src="../../../_static/images/cangjie_layout.webp" width="400" />
+  </p>
+<figcaption>
+<p>仓颉键盘<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>
+  </p>
+</figcaption>
+</figure>
+<h3 id="_17">仓颉工具<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>由仓颉输入汉字：</p>
+<ul>
+<li><a href="https://cangjieshurufa.bmcx.com/">便民查询网：在线仓颉输入法</a></li>
+</ul>
+<p>由汉字反查仓颉：</p>
+<ul>
+<li><a href="https://cangjie.hao86.com/">好工具——仓颉查字</a></li>
+</ul>
+<h2 id="_18">四角号码<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<p>四角号码的诞生在拼音之前，民国时期作为一种常用检字方案存在。
+四角号码检字是将一个字的左上、右上、左下、右下的四个部分摘取出来，
+使用一个数字描述每一个部分的方法。有时在最后增加一位补码，称为“附角”，故最多为五码。</p>
+<figure>
+<p><img alt="四角号码检字法" src="../../../_static/images/sijiaohaoma_jianzifa.svg" width="300" />
+  </p>
+<figcaption>
+<p>四角号码检字法<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>
+  </p>
+</figcaption>
+</figure>
+<h3 id="_19">四角号码工具<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.cidianwang.com/zd/sijiao.htm">词典网：四角号码</a></li>
+</ul>
+<h2 id="_20">中文电码<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<p>在仍然使用电报的时期，通过电报传送中文信息的需要用到中文电码。
+中文电码表采用了四位阿拉伯数字作代号，从0001到9999按四位数顺序排列，用四位数字表示最多一万个汉字、字母和符号。</p>
+<h3 id="_21">中文电码工具<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://dianma.bmcx.com/">便民查询网：中文电码</a></li>
+</ul>
+<h2 id="_22">通用规范汉字表<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
+<p>《通用规范汉字表》是教育部发布的一份表格，收集了8105个常用的汉字，分为一、二、三级，根据使用度进行排列。</p>
+<p>获取地址：</p>
+<ul>
+<li><a href="http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201306/t20130601_186002.html">教育部官网</a></li>
+<li><a href="https://jwc.fudan.edu.cn/_upload/article/files/73/dc/4f1e8c94471ab89b7e14b7b9b70a/347348f7-ab66-49c7-bd76-f2a5df517d35.pdf">复旦大学镜像</a></li>
+<li><a href="https://zh.wikisource.org/wiki/%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E6%B1%89%E5%AD%97%E8%A1%A8">维基文库</a></li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Cangjie6, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Wubi86_keyboard_layout.png">Wikimedia Commons</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Cangjie6, Jacek Fink-Finowicki, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:BK-YL_Keyboard_CJ.png">Wikimedia Commons</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>159265, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Sijiaohaoma_jianzifa.svg">Wikimedia Commons</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 26, 2024</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 22, 2024</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 JCarlson
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../_static/js/mathjax.js"></script>
+      
+        <script src="../../../assets/external/polyfill.io/v3/polyfill.min.7596a0b8.js"></script>
+      
+        <script src="../../../assets/external/cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../assets/external/unpkg.com/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
