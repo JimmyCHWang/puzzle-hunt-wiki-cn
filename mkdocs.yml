@@ -120,7 +120,7 @@ nav:
       - Baconian 培根: ciphers-and-codes/ciphers/baconian.md
       - Base 进制转换: ciphers-and-codes/ciphers/base.md
       - Caesar 凯撒: ciphers-and-codes/ciphers/caesar.md
-      - Columnar 列位移: ciphers-and-codes/ciphers/columnar.md
+      - Columnar 列移位: ciphers-and-codes/ciphers/columnar.md
       - Keyboard 键盘: ciphers-and-codes/ciphers/keyboard.md
       - MonoAlphabetic 单表替换: ciphers-and-codes/ciphers/monoalphabetic.md
       - Pigpen 猪圈: ciphers-and-codes/ciphers/pigpen.md
@@ -132,5 +132,24 @@ nav:
       - Vigenere 维吉尼亚: ciphers-and-codes/ciphers/vigenere.md
     - 代码 Codes:
       - ciphers-and-codes/codes/index.md
+      - 25-Pair Code: ciphers-and-codes/codes/25-pair.md
+      - Airport / Airlines 机场与航司: ciphers-and-codes/codes/airport.md
+      - Alphabet 字母表: ciphers-and-codes/codes/alphabet.md
+      - Area Codes 地区代码: ciphers-and-codes/codes/area-codes.md
       - ASCII: ciphers-and-codes/codes/ascii.md
+      - Barcode / QR Code: ciphers-and-codes/codes/barcode-qrcode.md
+      - Braille 布莱叶盲文: ciphers-and-codes/codes/braille.md
+      - Cantor Expansion 康托展开: ciphers-and-codes/codes/cantor-expansion.md
+      - Chinese Encoding 中文相关代码: ciphers-and-codes/codes/chinese-encoding.md
       - Color Codes 颜色代码: ciphers-and-codes/codes/color-codes.md
+      - Country Codes 国家代码: ciphers-and-codes/codes/country-codes.md
+      - DNA: ciphers-and-codes/codes/dna.md
+      - Guo Biao 国家标准: ciphers-and-codes/codes/guobiao.md
+      - ICS 国际信号旗: ciphers-and-codes/codes/ics.md
+      - Morse 摩斯电码: ciphers-and-codes/codes/morse.md
+      - Phonespell 手机键盘拼写: ciphers-and-codes/codes/phonespell.md
+      - Phonetic Alphabet 音标字母: ciphers-and-codes/codes/phonetic-alphabet.md
+      - Playing Cards 扑克牌: ciphers-and-codes/codes/playing-cards.md
+      - Resistor Color 电阻颜色: ciphers-and-codes/codes/resistor-color.md
+      - Semaphore 旗语: ciphers-and-codes/codes/semaphore.md
+      - Unicode 万国码: ciphers-and-codes/codes/unicode.md

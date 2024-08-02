@@ -55,6 +55,8 @@ PH 不是一项单打独斗的活动，对于新手而言，与队友合作是�
 - [PnKU 2](https://pnku2.pkupuzzle.art/)
 - [Miaohunt 2023](https://mh2023.puzzlehunt.cn/)
 
+你可以查看由 喵喵喵解谜 团队维护的[《中国谜题索引》](https://puzzlehunt.cn/)。
+
 ## 查看 PH 的介绍、规则、FAQ
 
 PH 的介绍页面、规则页面以及相关的 FAQ 里通常会有玩家参与 PH 的注意事项。

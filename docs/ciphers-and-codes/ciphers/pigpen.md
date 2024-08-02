@@ -19,7 +19,7 @@ status: frequent
 
 <figure markdown>
   ![猪圈密码样例](../../_static/images/pigpen-example.svg){ width="400" }
-  <figcaption>猪圈密码样例： X MARKS THE SPOT</figcaption>
+  <figcaption>猪圈密码样例：X MARKS THE SPOT</figcaption>
 </figure>
 
 ## 识别方式
@@ -33,7 +33,7 @@ status: frequent
 有些猪圈的变种会更改这些图案所表达的字母：
 
 - 更改顺序，将不带点的 V 形图案提前至带点方形图案之前（此时 J, K, L, M 为 V 形图案）
-- 将不带点与带点的图案交替 （ B = 之前的 J , C = 之前的 B , D = 之前的 K ）
+- 将不带点与带点的图案交替（B = 之前的 J, C = 之前的 B, D = 之前的 K）
 - 将 V 形图案替换成带两个点的方形图案
 
 ## 历史
