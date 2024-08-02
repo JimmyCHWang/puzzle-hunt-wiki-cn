@@ -132,12 +132,14 @@ nav:
       - Vigenere 维吉尼亚: ciphers-and-codes/ciphers/vigenere.md
     - 代码 Codes:
       - ciphers-and-codes/codes/index.md
+      - 25-Pair Code: ciphers-and-codes/codes/25-pair.md
       - Airport / Airlines 机场与航司: ciphers-and-codes/codes/airport.md
       - Alphabet 字母表: ciphers-and-codes/codes/alphabet.md
       - Area Codes 地区代码: ciphers-and-codes/codes/area-codes.md
       - ASCII: ciphers-and-codes/codes/ascii.md
       - Barcode / QR Code: ciphers-and-codes/codes/barcode-qrcode.md
       - Braille 布莱叶盲文: ciphers-and-codes/codes/braille.md
+      - Cantor Expansion 康托展开: ciphers-and-codes/codes/cantor-expansion.md
       - Chinese Encoding 中文相关代码: ciphers-and-codes/codes/chinese-encoding.md
       - Color Codes 颜色代码: ciphers-and-codes/codes/color-codes.md
       - Country Codes 国家代码: ciphers-and-codes/codes/country-codes.md
