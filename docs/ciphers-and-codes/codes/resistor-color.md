@@ -22,9 +22,6 @@ description: 电阻色
         padding: 8px;
         text-align: center;
     }
-    th {
-        background-color: #f2f2f2;
-    }
     .color-block {
         width: 50px;
         height: 20px;
