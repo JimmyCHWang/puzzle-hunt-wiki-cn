@@ -11,6 +11,6 @@ description: 用于电信业的双绞线接线时使用的色码
 - 第二条线：蓝橙绿棕灰
 
 <figure markdown>
-  ![25对色码](../../_static/images/25_pair_color_code){ width="400" }
+  ![25对色码](../../_static/images/25_pair_color_code.webp){ width="400" }
   <figcaption markdown>25 对色码</figcaption>
 </figure>
