@@ -32,7 +32,7 @@ description: 列移位置换密码
     需要指出，国内提到移位加密，第一反应多为**栅栏密码**。然而，其翻译 Railfence Cipher 在英文中
     实际上指的是另外一种加密。国内的栅栏密码实际指的是**不进行任何移动的列移位密码**。
 
-    关于 Railfence Cipher ，请参考[栅栏密码](./railfence.md)页面。
+    关于 Railfence Cipher，请参考[栅栏密码](./railfence.md)页面。
 
 ## 加密举例
 
@@ -154,7 +154,7 @@ description: 列移位置换密码
     </tbody>
 </table>
 
-然后按照 C 列， E 列， H 列这样的顺序竖着写出，得到
+然后按照 C 列，E 列，H 列这样的顺序竖着写出，得到
 
 密文： `WEZTN OUUIX CPHKX ETLWX LOEIX MZNCX`
 

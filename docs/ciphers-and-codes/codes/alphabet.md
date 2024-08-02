@@ -3,7 +3,7 @@ title: Alphabet 字母表
 description: 字母表。包括英文字母表，希腊字母表，还有其他较重要字母的识别
 ---
 
-字母表（ Alphabet ）是指一些字母（ Letters ）的集合，这些字母代表了一种语言中特定的发音。
+字母表（Alphabet）是指一些字母（Letters）的集合，这些字母代表了一种语言中特定的发音。
 
 本 Wiki 并非语言学教程，在这里仅列出一些在 PuzzleHunt 中常用到的字母表以及字母。
 
