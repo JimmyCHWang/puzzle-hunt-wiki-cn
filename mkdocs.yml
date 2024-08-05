@@ -40,7 +40,8 @@ copyright: Copyright &copy; 2024 JCarlson
 
 plugins:
   - privacy
-  - search
+  - search:
+      lang: zh
   - tags
   - git-revision-date-localized:
       enable_creation_date: true

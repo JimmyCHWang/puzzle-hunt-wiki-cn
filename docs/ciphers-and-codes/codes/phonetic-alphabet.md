@@ -1,6 +1,9 @@
 ---
 title: Phonetic Alphabet 音标字母
 description: 北约音标字母
+tags:
+  - 北约
+  - NATO
 ---
 
 音标字母 (Phonetic Alphabet) 又称为北约字母 (NATO Alphabet)，
